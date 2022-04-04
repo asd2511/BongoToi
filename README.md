@@ -1,24 +1,4 @@
-# BongoToi
-base on Bongo-Cat-Mver 0.1.1, add new feature Connect to bilibili live.
-
-
-## How to build
-
-### Build Bongo Cat Mver
-Please check Bongo-Cat-Mver branch 0.1.1.
-
-### Build Bilibili connection
-Go to liveRoom, Use Pyinstaller build a .exe file. Then copy them into Release file in BongoToi
-
-```shell
-pyinstaller -F liveBilibili.py
-```
-
-## TODO
-[ ] En Tutorial
-
-
-# BongoToi 操作书名
+# BongoToi 操作说明
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -67,6 +47,21 @@ BongoToi 是一款基于开源项目 BongoCat 0.1.1 以及 blivedm 开发而来�
 
     "牛蛙"，"点歌"，"mua"，"Mua"，"天下第一"，"饿饿"，"\偷偷/"
 
+	03.29 更新：
+	- 添加新的关键词 “记仇”
+	- 添加礼物互动功能。添加小心心作为示例。
+	- 添加【liveRoom.json】设置文件。
+      - 【room】 表示 连接的房间号。PS：短号码无效
+      - 【blockList】表示 黑名单。使用uid排除部分用户。示例用户为机器人。
+      - 【ReactionDMK】 表示 只要发送的弹幕含有该单词，就会激活"img\meme"文件夹中对应的表情。PS：json文件的序号比文件夹中序号大1！
+      - 【ReactionGift】 表示 发送对应的礼物即可触发该表情。表情位置同样位于meme文件夹下。 PS: 注意，请务必确保礼物名与叔叔的礼物名完全一致。
+
+	04.01 更新：
+	- 增加 表情到50个
+	- 修成python文件中键值错误。
+	- 偷偷生日快乐~
+
+
 3. BongoCat设置：请参考[教程](https://www.bilibili.com/video/BV1d7411n71D)
 
     - 注意：
@@ -80,21 +75,3 @@ BongoToi 是一款基于开源项目 BongoCat 0.1.1 以及 blivedm 开发而来�
 - [ ] 暴露弹幕列表于Json文件。为二次开发提供更好的条件
 - [ ] 暴露黑名单列表。 防止弹幕机器人对BongoToi造成阻塞
 - [ ] BongoToi 播放gif。获得可视化效果
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
